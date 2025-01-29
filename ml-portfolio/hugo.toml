@@ -1,0 +1,112 @@
+baseURL = "https://raf-97414.github.io/"
+languageCode = "en-us"
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+enableEmoji = true
+title = "Rafelia's AI LOLs"
+theme = "hermit-V2"
+themeColor = "#494f5c"
+accentColor = "#018472"
+relativeURLs = false
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+rssLimit = 10
+
+[frontmatter]
+date = ["lastmod", "date", "publishDate"]
+lastmod = ["date", "lastmod", ":git", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
+
+[params.author]
+name = "Rafelia"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      strikethrough = false
+      [markup.goldmark.extensions.extras]
+        [markup.goldmark.extensions.extras.insert]
+          enable = true
+        [markup.goldmark.extensions.extras.delete]
+          enable = true
+        [markup.goldmark.extensions.extras.mark]
+          enable = true
+        [markup.goldmark.extensions.extras.subscript]
+          enable = true
+        [markup.goldmark.extensions.extras.superscript]
+          enable = true
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+
+justifyContent = false
+relatedPosts = true
+code_copy_button = true
+homeSubtitlePrinter = true
+scrollToTop = true
+global_mathjax = false
+readTime = true
+readTimeSeparator = "\u2026 \u23F2 Reading Time:"
+shareSocial = true
+pinned = "Pinned Posts"
+descriptionInPosts = true
+human = ["single","posts"]
+[params]
+dateform        = "Jan 2, 2006"
+dateformShort   = "Jan 2"
+dateformNum     = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04 -0700"
+homeSubtitle = "Projects, Research & Insights Simplified!"
+footerCopyright = ' <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0 </a>'
+description = "Projects, Research & Insights Simplified!"
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+usesAnimation = true
+homeSubtitlePrinter = true
+[outputs]
+   home = ['html', 'rss']
+   page = ['html']
+   rss = ['rss']
+   section = ['html', 'rss']
+   taxonomy = ['html', 'rss']
+   term = ['html', 'rss']
+
+[[params.socialLinks]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/rafelia-edwige-fernandes-490603203/"
+
+[[params.socialLinks]]
+name = "x"
+url = "https://x.com/Rafelia97"
+
+[[params.socialLinks]]
+name = "github"
+url = "https://github.com/raf-97414"
+
+[[params.socialLinks]]
+name = "kaggle"
+url = "https://www.kaggle.com/rafeliafernandes"
+
+[menu]
+
+  [[menu.main]]
+    name = "Posts"
+    url = "posts/"
+    weight = 10
+
+  [[menu.main]]
+    name = "Projects"
+    url = "projects/"
+    weight = 10
+ [[menu.main]]
+    name = "About Rafelia"
+    url = "about/"
+    weight = 10

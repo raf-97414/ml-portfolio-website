@@ -1,0 +1,4 @@
+[submodule "ml-portfolio/public"]
+	path = ml-portfolio/public
+	url = https://github.com/raf-97414/raf-97414.github.io.git
+	branch = main
