@@ -17,6 +17,7 @@ date = ["lastmod", "date", "publishDate"]
 lastmod = ["date", "lastmod", ":git", "publishDate"]
 publishDate = ["publishDate", "date"]
 expiryDate = ["expiryDate"]
+mathjax = true
 
 [params.author]
 name = "Rafelia"
@@ -53,7 +54,7 @@ relatedPosts = true
 code_copy_button = true
 homeSubtitlePrinter = true
 scrollToTop = true
-global_mathjax = false
+global_mathjax = true
 readTime = true
 readTimeSeparator = "\u2026 \u23F2 Reading Time:"
 shareSocial = true
